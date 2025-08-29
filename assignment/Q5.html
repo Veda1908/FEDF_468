@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dining Spot - Restaurant</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Navbar styling */
+    .navbar {
+      background-color: #4b6cb7; 
+      background-image: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+    }
+    .navbar-brand,
+    .nav-link,
+    .dropdown-item {
+      color: white !important;
+    }
+    .nav-link:hover,
+    .dropdown-item:hover {
+      background-color: #3a4a7a;
+      color: #ffdd57 !important; 
+    }
+    .navbar-toggler {
+      border-color: #fff;
+    }
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    /* Section styling */
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+    #home { background-color: #f8f9fa; text-align:center; }
+    #about { background-color: #e9ecef; text-align:center; }
+    #specials, #starters, #main-course, #desserts { background-color: #f1f3f5; padding:60px 20px; text-align:center; }
+    #services { background-color: #dee2e6; text-align:center; }
+    #contact { background-color: #ced4da; text-align:center; padding:60px 20px; }
+
+    h2 { margin-bottom:20px; }
+    p { max-width:600px; margin:auto; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#home">Dining Spot</a>
+
+      <!-- Hamburger button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+
+          <!-- Menu Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+              Menu
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#specials">Specials</a></li>
+              <li><a class="dropdown-item" href="#starters">Starters</a></li>
+              <li><a class="dropdown-item" href="#main-course">Main Course</a></li>
+              <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+            </ul>
+          </li>
+
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#home-delivery">Home Delivery</a></li>
+              <li><a class="dropdown-item" href="#event-orders">Event Orders</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Welcome to Dining Spot</h1>
+    <p>Enjoy delicious meals, delivered with care and quality.</p>
+    <p>Our cozy ambiance and friendly staff make every visit memorable.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Dining Spot serves fresh, quality food for every occasion. We prioritize taste, hygiene, and customer satisfaction.</p>
+    <p>From traditional recipes to modern culinary creations, we cater to all palates.</p>
+  </section>
+
+  <!-- Menu Sections -->
+  <section id="specials">
+    <h2>Specials</h2>
+    <p>Try our chef's special dishes prepared daily with fresh ingredients and unique flavors.</p>
+    <p>These meals are seasonal and designed to give a unique dining experience every time.</p>
+  </section>
+
+  <section id="starters">
+    <h2>Starters</h2>
+    <p>Delicious appetizers to kickstart your meal, from soups to finger foods.</p>
+  </section>
+
+  <section id="main-course">
+    <h2>Main Course</h2>
+    <p>Hearty and flavorful main dishes that satisfy your cravings.</p>
+    <p>Choose from vegetarian, non-vegetarian, and chef-recommended specialties.</p>
+  </section>
+
+  <section id="desserts">
+    <h2>Desserts</h2>
+    <p>Sweet treats to complete your meal, from cakes to pastries.</p>
+    <p>Our desserts are freshly made and perfect for all occasions.</p>
+  </section>
+
+  <!-- Services Sections -->
+  <section id="home-delivery">
+    <h2>Home Delivery</h2>
+    <p>Get your favorite meals delivered quickly and safely to your doorstep.</p>
+    <p>We ensure quality packaging so your food arrives hot and fresh.</p>
+  </section>
+
+  <section id="event-orders">
+    <h2>Event Orders</h2>
+    <p>Customized catering for weddings, parties, and corporate events with attention to detail.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@diningspot.com | Phone: +91 9876543210</p>
+    <p>Visit us at our restaurant or place your order online! We are happy to serve you anytime.</p>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

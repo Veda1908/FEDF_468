@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - N.Veda Samhita</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {
+      .navbar-brand { font-size: 1.2rem; }
+    }
+    section { padding: 60px 0; }
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    
+    /* Soft classic backgrounds */
+    #home { background-color: #f0f4f8; }
+    #projects { background-color: #ffffff; }
+    #about { background-color: #f9f6f2; }
+    #contact { background-color: #e8f0fe; }
+
+    /* Center projects row */
+    #projects .row {
+      justify-content: center;
+    }
+
+    /* Optional: card colors for subtle contrast */
+    #projects .card {
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">N.Veda Samhita</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center">
+    <div class="container">
+      <h1 class="display-4">Hi I'm N.Veda Samhita</h1>
+      <p class="lead">Computer Science undergraduate</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Smart Dustbin</h5>
+              <p class="card-text">
+                Designed and implemented a sensor-based dustbin using Arduino UNO, ultrasonic sensors, servo motors, and battery power.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Smart Class Hub – Personalized Learning Platform</h5>
+              <p class="card-text">
+                Designed and developed a responsive web platform to unify college academic resources, including timetables, assignments, announcements, and classroom tools. Built an all-in-one dashboard to streamline user experience and reduce platform switching.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="text-center">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a 2nd year B.Tech Computer Science student with a passion for problem-solving and continuous learning.  
+        I have experience in competitive programming and have worked on projects in web development, embedded systems, and data analytics.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:vedasamhita198@gmail.com">vedasamhita198@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Veda1908" target="_blank">Veda1908</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/veda-samhita-923a11325/" target="_blank">Profile</a></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
