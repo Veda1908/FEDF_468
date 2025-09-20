@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Theme Switcher</title>
+  <style>
+    body { transition: background 0.4s, color 0.4s; font-family: sans-serif; margin:0; padding:0;}
+    .theme-light { background:#fff; color:#212529; }
+    .theme-dark { background:#121212; color:#f8f9fa; }
+    .theme-sepia { background:#f4ecd8; color:#5b4636; }
+
+    nav { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    nav h1 { margin:0; font-size:1.5rem; }
+
+    .btn-group { display:flex; gap:0.5rem; }
+    button { padding:0.5rem 1rem; border:2px solid; border-radius:5px; cursor:pointer; transition:0.3s; background:transparent; font-weight:500; }
+    button[data-theme="light"] { border-color:#0d6efd; color:#0d6efd; }
+    button[data-theme="dark"] { border-color:#6c757d; color:#6c757d; }
+    button[data-theme="sepia"] { border-color:#a67c52; color:#a67c52; }
+    button:hover { transform:scale(1.05); opacity:0.85; }
+
+    main { max-width:600px; margin:3rem auto; text-align:center; }
+    main h1 { margin-bottom:1rem; }
+    main p { margin-bottom:2rem; }
+    .btn-primary { background:#0d6efd; color:#fff; border:none; padding:0.6rem 1.2rem; border-radius:5px; font-size:1rem; cursor:pointer; transition:0.3s; }
+    .btn-primary:hover { background:#0b5ed7; }
+  </style>
+</head>
+<body class="theme-light">
+  <nav>
+    <h1>STUDENT LMS</h1>
+    <div class="btn-group">
+      <button data-theme="light">Light</button>
+      <button data-theme="dark">Dark</button>
+      <button data-theme="sepia">Sepia</button>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Welcome, Student!</h1>
+    <p>Choose a theme to customize your LMS and make it more interesting.</p>
+    <button class="btn-primary">Start Learning</button>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-theme]");
+    const body = document.body;
+    const savedTheme = localStorage.getItem("theme") || "light";
+    body.className = `theme-${savedTheme}`;
+    buttons.forEach(btn => btn.addEventListener("click", () => {
+      const theme = btn.dataset.theme;
+      body.className = `theme-${theme}`;
+      localStorage.setItem("theme", theme);
+    }));
+  </script>
+</body>
+</html>
